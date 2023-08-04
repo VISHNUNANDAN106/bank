@@ -1,0 +1,39 @@
+H3{
+    text-align: center;
+    color: white;
+}
+    
+.card-body{
+    background:linear-gradient(to bottom,#0499f036,#f332196b,#11f81d21);
+ 
+}
+
+h5{
+    text-align: center;
+    
+}
+form{
+    text-align: center;
+}
+#l1{
+    width: 25%;
+    text-align: center;
+}
+.form-label{
+    width: 200px;
+    color: white;
+}
+.z1{
+    width: 150px;
+}
+h5{
+    color: white;
+}
+.n1{
+    color: blue;
+    
+}
+h2{
+    color: black;
+    text-align: center;
+}

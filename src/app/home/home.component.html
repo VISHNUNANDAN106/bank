@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Sidebar HTML and CSS| CodingNepal</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <ul class="links">
+      <!-- <h4>Main Menu</h4>
+        <li>
+          <span class="material-symbols-outlined">dashboard</span>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">show_chart</span>
+          <a href="#">Revenue</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">flag</span>
+          <a href="#">Reports</a>
+        </li> -->
+      <!-- <hr> -->
+      <br><br>
+      <h4>Profile</h4><br>
+      <li>
+        <span class="material-symbols-outlined">person</span>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal1">View Profile</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">
+          account_balance
+        </span>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal">Balance Enquiry </a>
+
+      </li>
+      <li>
+        <span class="material-symbols-outlined">ambient_screen</span>
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Money
+          Transfer</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">Overview</span>
+        <a href="#">Account Statement</a>
+      </li>
+      <!-- <li>
+          <span class="material-symbols-outlined">monitoring</span>
+          <a href="#">Analytic</a>
+        </li> -->
+      <hr>
+
+      <h4>Account</h4>
+      <li class="logout-link">
+        <span class="material-symbols-outlined">logout</span>
+        <a href="#">Logout</a>
+      </li>
+      <li class="dlte-link">
+        <span class="material-symbols-outlined">
+          delete
+        </span>
+        <a href="#">Delete Account</a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- modal -->
+  <!-- balance-->
+  <div class="modal fade col-lg-4 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog ">
+
+      <div class="modal-content ">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title " id="exampleModalLabel">Hello VISHNU</h2>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+
+        <img src="https://i.postimg.cc/MH3Jtjxm/piggy-removebg-preview.png" alt="">
+
+        <div class="modal-body">
+         <h4> The Current Available balance in Account Number <span class="spn">1213</span></h4>
+
+        </div>
+        <!-- <br><br> -->
+        <div class=" modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> </div>
+          <!-- <div class="modal-footer">modal-footer
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- money -->
+  <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title container" id="offcanvasExampleLabel">Online Money Transfer</h4>
+      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      
+    </div>
+    <div class="offcanvas-body container"><br>
+      <div >
+        <form>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Recipient Account Number</label>
+            <input type="number" class="form-control" >
+          </div>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">IFSC Code</label>
+            <input type="text" class="form-control">
+          </div>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Amount</label>
+            <input type="number" class="form-control">
+          </div>
+          <div id="a1" class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary">Send Money</button>
+         
+        </form>
+      </div>
+      <!-- <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- profile -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="prof"> 
+        <!-- modal-content -->
+        <div class="modal-header">
+          <!-- modal-header -->
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <h1 class="modal-title fs-5" style="text-align: center;" id="exampleModalLabel">Profile Details</h1>
+        <img src="https://i.postimg.cc/4yPzWSJS/profile.png" style="align-items: center;" class="pic" alt="">
+        <div class="modal-body profile">
+         <h3>USERNAME:</h3>
+         <h3>ACCOUNTNO:</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+<!-- modal -->
+<!-- <div class="modal fade bg-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->

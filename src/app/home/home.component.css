@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* margin-top: 10px; */
+}
+body {
+    height: 100vh;
+    width: 100%;
+    color: #d90ea6;
+    background-position: center;
+    background-size: cover;
+    /* margin-bottom: 50px; */
+}
+.sidebar {
+    position: relative;
+    /* top: 0; */
+    /* left: 0; */
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(5, 240, 44, 0);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+   /* margin-top: 50px; */
+    
+}
+.sidebar:hover {
+    width: 260px;
+}
+.sidebar .logo {
+    /* color: #000; */
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+.logo img {
+    width: 43px;
+    border-radius: 50%;
+}
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+.sidebar:hover .logo h2 {
+    display: block;
+}
+.sidebar .links {
+    list-style: none;
+    /* margin-top: 20px; */
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li:hover {
+    cursor: pointer;
+    background: white;
+}
+.links h4 {
+    color: white;
+    font-weight: 500;
+    display: none;
+    /* margin-bottom: 10px; */
+}
+.sidebar:hover .links h4 {
+    display: block;
+}
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    /* color: #000; */
+    color: rgb(228, 12, 52);
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.sidebar:hover .links li a {
+    display: block;
+}
+.links .logout-link {
+    margin-top: 30px;
+}
+.modal-content{
+    /* background-color: rgb(15, 16, 16); */
+    background-image: url( "https://i.postimg.cc/Z5YnHX3T/240-F-550218609-36-Jrxr-IIAn-PRfz-Iz-P7p-TPl-Wr-RIvy-Yuw-D.jpg");
+    align-items: center;
+   /* padding: 15px; */
+    margin-top: 5vh;
+    /* margin-left: 10vh; */
+    border-radius: 20px;
+    color: white;
+}
+.modal-dialog{
+    /* align-items: center; */
+    margin-top: 20px;
+}
+img{
+    margin-top: 2vh;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+}
+.modal-header{
+    margin-top: 2vh;
+    
+}
+.btn{
+    width: 100px;
+    /* margin-right: 40vh; */
+    margin-top: 30px;
+}
+/* .btn-close{
+    margin-left: 200px;
+} */
+/* .container-fluid{
+    align-items: center;
+} */
+.spn{
+    color:red;
+}
+.modal-body{
+    text-align: center;
+}
+.modal-footer{
+    /* margin-top: 30px; */
+    margin-right: 0;
+    align-items: center;
+   
+}
+#offcanvasExample{
+    background-image: url(https://i.postimg.cc/Vs0rwmJ0/online-money-transfer-app.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 25%;
+    /* background-color: #000; */
+    /* width: 30%; */
+    padding: 50px;
+    /* margin-left: 20vh; */
+    
+    
+    
+    
+}
+#offcanvasExampleLabel{
+    text-align: center;
+    color: rgb(0, 4, 8);
+    margin-top: 50px;
+}
+
+
+
+#a1{
+    color: rgb(0, 6, 11);
+    margin-top: 25px;
+    
+    
+}
+:hover#offcanvasExample{
+    border: #c61919;
+    border: 50px;
+}
+button{
+    margin-left: 35%;
+    width: 30%;
+    height: 30px;
+}
+.prof{
+    background-color: beige;
+}
+.btn-close{
+    margin-top: 10px;
+}
+.pic{
+    align-items: center;
+    height: 50px;
+    width: 30%;
+    margin-left: 40%;
+}
+.profile{
+    text-align: left;
+    padding: 15px;
+}
