@@ -8,17 +8,19 @@ import { Component } from '@angular/core';
 export class LoginComponent {
  data="Happy banking with us ,"
  data2="Enter account number"
- login(){
-  alert("login clicked")
+ login(a:any,b:any){
+console.log(a.value);
+console.log(b.value);
+
 
  }
- acnoChange(event:any){
-  console.log(event.target.value);
+//  acnoChange(event:any){
+//   console.log(event.target.value);
   
- }
- paassChange(event:any){
-  console.log(event.target.value);
+//  }
+//  paassChange(event:any){
+//   console.log(event.target.value);
   
- }
+//  }
 
 }
