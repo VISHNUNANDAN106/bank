@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +9,15 @@ import { Component } from '@angular/core';
 export class LoginComponent {
  data="Happy banking with us ,"
  data2="Enter account number"
- login(a:any,b:any){
-console.log(a.value);
-console.log(b.value);
-
+ acno:any
+ psw:any
+ constructor(private rout:Router) { }
+ login(){
+//  console.log(this.acno);
+//  console.log(this.psw);
+// alert(this.acno)
+// redirection
+this.rout.navigateByUrl("home")
 
  }
 //  acnoChange(event:any){

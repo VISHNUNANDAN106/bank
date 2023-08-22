@@ -6,19 +6,19 @@
         <form>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">User Id</label><br>
-              <input #acno type="text" id="l1" [placeholder]="data2">
+              <input [(ngModel)]="acno" type="text" name="acc" id="l1" [placeholder]="data2">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label><br>
-                <input #psw type="password" class="" id="l2">
+                <input [(ngModel)]="psw" type="password" name="password" class="" id="l2">
               </div>
             <div class="mb-3 form-check"> 
                 <br>
-                <button (click)="login(acno,psw)" type="button" class="z1 btn btn-success ">LOGIN</button>
+                <button (click)="login()" type="submit" class="z1 btn btn-success ">LOGIN</button>
               </div>
                 <div class="mb-3 form-check">
 <br>
-                    <h5 >if you are new:<a class="n1" href="">create a new account</a></h5>
+                    <h5 >if you are new:<a class="n1" routerLink="signup">create a new account</a></h5>
 
             </div>
 

@@ -19,6 +19,11 @@ form{
     width: 25%;
     text-align: center;
 }
+#l2{
+    width: 25%;
+    text-align: center;
+}
+
 .form-label{
     width: 200px;
     color: white;

@@ -10,3 +10,76 @@
 
 1.2.1 - $event binding-onclick-click(event)="method" 
 1.2.2 - $event binding-onchange-change(event)="method($event)"
+1.2.3-event binding using template rendering variable -#variable
+
+
+
+2-Two Way binding
+
+2.1-ngModel -FormsModule
+
+
+folder          - js files - class - methods
+library/package -  module  - class - methods
+
+
+angular services
+-----------------
+    
+service file    ---------> comp 1
+     ,,         --------->comp 2
+     ,,         ---------->comp3
+      angularinte akath oru component akath mathro data share cheyyan ptuu 
+      components parasprm data share cheyyan pttilla 
+      components nu common data venel angular service use
+       service filil ninnum access cheyyan pttum
+
+       --a common  ts file contain methods and datas,all components can access the datas inside service
+
+     service file create--1 module nu 1 service file 
+    -*-*-*-*- command-ng(angular) g(generate) s(service) servicename
+     
+     redirection in angular
+     path set
+    
+    -----------------------
+     -----------------------
+
+redirection methods
+     navigateByUrl   -method
+     Router          - class
+     AppRoutingModule-module
+
+link
+-----
+-----
+href- routerLink 
+
+21--
+oru classinte akathu vere oru class use chyyan inheritence pole---dependancy injection-(to use properties (methods and  variables)of one class in another class)
+constructor()---constructoril aanu cheyyendath
+first--classinu access specifier kodukknm prnj--private/public
+
+example---
+class{
+     constructor(private/public){
+
+     }
+}
+------private aanel aa otta clssnu mathro use chyyan pattu ollu----injected class available only in that class
+-------public anel aa pageil thanne vere class ondelum use cheyyan pttum--injected class available in all other classes of that file
+
+second--
+constructor(acessSpecifier variable:ClassName){
+
+}
+component open akumbole enthelum cheyyan
+constructor or ng on init
+
+constructor--dependencyinjection only use
+ng on init --start cheyyumbo work cheyyanda code kl
+
+
+data edukkunnath--sdata:any koduthitt
+this.sdata=this.ds.data
+ennitt{{sdata}} call cheyynm
