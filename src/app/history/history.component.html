@@ -1,0 +1,54 @@
+
+    
+    <div class="text-align-center">
+        <!-- <div class="row"> -->
+            <div class="col-7 mb-5 ">
+                <h3 class="text-center P-4  " style="color: white;"><span style="color: black;">TRANSACTION</span> HISTORY</h3>
+                <div class="text-center " style="color: white;">{{date | date : 'short'}}</div>
+                <div *ngIf="spinner" class="text-center p-4"> <i class="fa-solid fa-spinner fa-spin-pulse fa-3x text-info"></i></div>
+
+                <div class="btn-group p-3 ms-5 mb-3" role="group" aria-label="Basic example">
+                    <button (click)="filterData('')" type="button" class="btn btn-success">All</button>
+                    <button (click)="filterData('CREDIT')" type="button" class="btn btn-primary">Credit</button>
+                    <button (click)="filterData('DEBIT')" type="button" class="btn btn-dark">Debit</button>
+
+                  </div>
+                <table *ngIf="!spinner" class="table P-3 table-dark table-striped-columns ms-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AccountNumber</th>
+                        <th scope="col">Date</th>
+    
+                      </tr>
+                    </thead>
+                    <tbody>
+                       <!-- data| pipename:searchString :searchKey -->
+                      <tr *ngFor="let i of transactionArray | filter: searchTerm:'type',let j=index">
+                        <th scope="row">{{j+1}}</th>
+                        <td>{{i.type}}</td>
+                        <td>{{i.amount}}</td>
+                        <td>{{i.tacno}}</td>
+                        <td>{{i.date}}</td>
+    
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button (click)="pdfExport()"  type="button" class="btn btn-outline-primary p-2 mt-4 ms-5 px-5">
+                    <b >Download</b>  <i class="fa-solid fa-file-arrow-down fa-fade ms-3 fs-4" style="color: #e2e6ed;"></i>
+                </button>
+    
+            </div>
+            <div class="col-5 ">
+
+    <button  type="button" class="btn btn-outline-primary p-2 me-5 ms-5 px-5  " style="margin-top: 100px;    ">
+        <b (click)="backtoHome()">Back To Home <i class="fa-solid fa-house fa-beat-fade fs-4" style="color: #e2e6ed;"></i>
+        </b>  
+    </button>
+            </div>
+        <!-- </div> -->
+
+    </div>
+    

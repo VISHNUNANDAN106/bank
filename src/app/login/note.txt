@@ -83,3 +83,141 @@ ng on init --start cheyyumbo work cheyyanda code kl
 data edukkunnath--sdata:any koduthitt
 this.sdata=this.ds.data
 ennitt{{sdata}} call cheyynm
+
+
+
+
+
+
+regular expression
+------------------
+string type data rules
+--------------
+
+'[abc]' -either a or b or c
+'[^abc]'-except a or b or c
+'[a-z]' -all small letters
+'[^a-z]'-except small letters
+'[A-Z]'
+'[0-9]'
+
+'[^a-zA-Z0-9]'
+
+quantifiers
+-----------
+
+'[a-zA-Z]+' = min count=1 max=...
+'[a-zA-Z]*' = min count=0 max=...
+'[a-zA-Z]{5}' = exact 5 numbers
+'[a-zA-Z]{5,10}' = min length=5 max=10
+'[a-zA-Z]' - '[a-zA-Z]{1}' ---default aayitt 
+
+ 
+ KL05 RD1234
+ '[K][L][0-9]{2}[A-Z]{2}[0-9]{4}
+
+
+
+
+
+ ngon init and  console vnnu
+
+
+DOM manipulation --ANGULAR DIRECTIVES
+                   -------------------
+                   COMPONENT DIRECTIVES---COMPONENT CREATION - ng g c compName
+                   STRUCTURAL DIRECTIVES--changing the structure of dom-conditionally change--*ngIf
+                   ATRIBUTE DIRECTIVES--- ngClass-condition trur or false apply cheyyan---change the dom with attrributes
+                   <
+
+
+api handling in angular
+---------------------
+-create
+methode-get.post.put.patch.delete
+class  - HttpClient
+module - HttpClientModule
+
+ajax--fetch
+
+
+resolve asynchronous in ts
+--------------------------
+js---promise - resolve--then()
+             - reject --catch()
+             
+ts---observable - resolve--subscribe()
+                - reject - catch()
+
+
+
+
+
+
+front-end back-end integration
+--------
+library - cors -cross origin resource sharing
+
+
+money transfer-- frontend -recipient acno,psw,acno
+--------------
+                          - Amount
+
+                  transaction Details
+                 
+                 - transaction acno,amount,method=credit/debit,date and time
+
+
+
+                 angular pipe
+                 ------------
+used to transorm data format
+
+
+
+*ngFor:-change the structue by looping
+
+filter--using data transformation--pipe   
+
+pipe creation in angular
+-----------------------
+
+ng g pipe pipeName
+
+transorm(data to transorm,search string, array key)
+ data to transform-transaction array
+ search string---""/"credit"/"debit"
+ array key -type
+
+
+ parent child communication in angular
+ ---------------------------------------
+
+ parent to child -@input()  -
+                              -input and output decorator
+ child to parent--@output() -
+
+
+ event creation
+ ------------
+
+ Event Emitter - class used to create user defined events
+
+
+ User Authentication
+ --------------------
+
+ jwt (json web token)-----npm i jsonwebtoken
+
+
+ header creation in angular
+ --------------------------
+ HTTPHeaders- clSS USED TO CREATE HEADER OBJECT
+
+ middlewares
+ ------------
+function with 3 argmnts
+ are used in backend to control server requests coming from client side...
+
+ 1-Application Specific middlewares--control all router of server application
+ 2-Router specific middle wares    -only control specified routers

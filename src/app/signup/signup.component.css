@@ -20,7 +20,7 @@ body {
   padding: 20px
     30px
     120px;
-  background: #4070f4;
+  background:rgba(5, 5, 104, 0.374);
   box-shadow: 0
     5px
     10px
@@ -33,6 +33,7 @@ body {
   overflow: hidden;
 }
 .form.login {
+  
   position: absolute;
   left: 50%;
   bottom: -86%;
@@ -69,7 +70,7 @@ body {
 }
 .form.login
   header {
-  color: #333;
+  color:rgb(12, 12, 115);
   opacity: 0.6;
 }
 .wrapper.active

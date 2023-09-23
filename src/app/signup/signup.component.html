@@ -10,12 +10,19 @@
   <body>
     <section class="wrapper">
       <div class="form signup">
-        <header>Signup</header>
-        <form action="#">
-          <input type="text" placeholder="Full name" required />
-          <input type="text" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
-          <input type="password" placeholder="confirm password" required />
+        <header>SIGNUP</header>
+        <form [formGroup]="signupForm" action="#">
+          <input formControlName="acno" id="a1" name="acno" type="text" placeholder="Account Number" required />
+          <p *ngIf="this.signupForm.get('acno')?.errors && this.signupForm.get('acno')?.touched " class="text-danger">Accept Only Numbers</p>
+          <input formControlName="uname" id="u1" name="uname" type="text" placeholder="User Name" required />
+          <p  *ngIf="this.signupForm.get('uname')?.errors && this.signupForm.get('uname')?.touched " class="text-danger">Please Include Characters Only</p>
+
+          <input formControlName="psw" id="p1" name="password" type="password" placeholder="Password" required />
+          <p  *ngIf="this.signupForm.get('psw')?.errors && this.signupForm.get('psw')?.touched " class="text-danger">Please Include Characters And Numbers Only</p>
+
+          <input formControlName="cpsw"  id="p2" name="password1" type="password" placeholder="Confirm Password" required />
+          <p *ngIf="pswCheck" class="text-danger">Password Doesn't Match</p>
+
 
           <div class="checkbox">
             <input type="checkbox" id="signupCheck" />
@@ -27,7 +34,7 @@
         </form>
       </div>
       <div class="form login">
-        <header>Login</header>
+        <header>LOGIN</header>
         <form action="#">
           <input type="text" placeholder="Email address" required />
           <input type="password" placeholder="Password" required />
@@ -35,7 +42,8 @@
           <input type="submit" value="Login" />
         </form>
       </div>
-      <script>
+
+      <!-- <script>
         const wrapper = document.querySelector(".wrapper"),
           signupHeader = document.querySelector(".signup header"),
           loginHeader = document.querySelector(".login header");
@@ -45,6 +53,6 @@
         signupHeader.addEventListener("click", () => {
           wrapper.classList.remove("active");
         });
-      </script>
+      </script> -->
     </section>
   </body>
